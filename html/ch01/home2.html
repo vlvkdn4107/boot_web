@@ -1,0 +1,44 @@
+a 태그는 하이퍼 링크를 정의합니다 href 속성은 링크로 이동 페이지의 URL을
+지정합니다.
+<a href="http://www.naver.com"> 네이버로 이동하기</a>
+tag에 추가적인 정보를 주는것을 attibute(속성) 이라고 한다.
+
+<!-- 아무이름으로 속성을 적을수는 있지만 브라우저는 이해못한다  -->
+<h1 myNews="fist Title">title</h1>
+
+<!--h1테그에 href 추가적인 정보를 추가하더라고 역시나 이해하지 못한다 
+    하이퍼 속성이 안먹힌다!!!! 
+    href는 a테그에서만 사용이 가능하다-->
+<h1 href="http://www.naver.com">title</h1>
+
+<!-- 올바른 테그를 올바른 위치에 작성해야한다. -->
+<ahref="http://www.naver.com">title</a>
+
+<!-- 지금 열려있는 자기자신이 설정해놓은 웹페이즈로 변겅이된다 -->
+<a href="http://www.naver.com" target="_self">네이버</a>
+<!-- 지금 열려있는 웹페이지는 그대로있고 새로 웹페이즈를 열어서 설정해 놓은 웹페이즈를 새로 연다 -->
+<a href="http://www.naver.com" target="_blank">네이버</a>
+
+<!-- 이미지는 셀프클로징 타입이다 (열고 닫는게 없다)  (자기자신이 contents이다)-->
+<img src="https://s.pstatic.net/shopping.phinf/20220503_11/508a5d20-2559-4d01-83e1-f27e775fa39a.jpg?type=f214_292"/>
+
+<!-- src속성은 img테그에서만 사용가능하기때문에 브라우저가 이해하지 못한다. -->
+<h1 src="https://s.pstatic.net/shopping.phinf/20220503_11/508a5d20-2559-4d01-83e1-f27e775fa39a.jpg?type=f214_292"></h1>
+
+<!-- 상대경로 -->
+<img src="../img/logo.png"/> 
+
+<!-- 
+    절대경로
+    파일 경로를 찾을 때 직접적인 경로를 그대로 적는 방식을 말한다.
+    <h1 src="https://s.pstatic.net/shopping.phinf/20220503_11/508a5d20-2559-4d01-83e1-f27e775fa39a.jpg?type=f214_292"></h1>
+    <img src ="c:devmote/image/logo.png"/>
+    
+    상대경로
+    상대경로란 파일 경로를 찾을 때, 경로를 찾는 파일의 기준으로 찾는 방식인데 예를들어 home2.html 파일 안에
+    <img src="img/logo.png/>"
+    상대 경로를 지정하는 방식
+    상위결로 : ..
+    현재폴더 : ./  or   ""아무것도 적지 않으면 현재 폴더를 의미한다
+    하위폴더 : 하위폴더명/
+ -->
