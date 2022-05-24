@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 100vh;
+        margin: 50px;
+      }
+      div {
+        height: 300px;
+        width: 300px;
+        background-color: aqua;
+        /* position: static; */
+        /* position 기본값은 static이고 레이아웃 박스를 처음 위치하는 곳에 두는 것을 위미한다 */
+        position: static;
+      }
+      .green {
+        position: relative;
+        /* position: absolute; */
+        /* relative는 박스를 처음 위치한곳에서 조금 움직이고 싶을때 사용한다. 
+           absolute는 
+        */
+        top: -10px;
+        left: -10px;
+        background-color: teal;
+        height: 100px;
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="green"></div>
+    </div>
+  </body>
+</html>
