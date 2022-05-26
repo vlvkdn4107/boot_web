@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0px;
+        height: 100vh;
+        margin: 50px;
+      }
+      span {
+        color: aquamarine;
+        padding: 5px;
+      }
+      p span {
+        /* color: gold; */
+      }
+      div p span {
+        /* background-color: blueviolet; */
+      }
+      div > span {
+        text-decoration: underline;
+      }
+      p + address {
+        background-color: blueviolet;
+        margin: 0 20px;
+      }
+      p ~ address {
+        background-color: aqua;
+        margin: 0 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <span>hello</span>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis
+        mollitia illo doloremque ex quisquam vel deserunt dolore, tempore
+        commodi, voluptatum dolorem corrupti vitae sint obcaecati nihil.
+        Eligendi labore <span> necessitatibus</span>
+      </p>
+      <address>부산시 진구</address>
+      <address>부산시 수영구</address>
+      <span>hello</span>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 가상클래스 선택자 pseudo 
+          
+        
+        */
+      div {
+        width: 300px;
+        height: 300px;
+        background-color: blueviolet;
+      }
+      div:last-child {
+        background-color: aqua;
+      }
+      div:first-child {
+        background-color: blue;
+      }
+      span {
+        background-color: brown;
+      }
+      /* span:nth-child(2),
+      span:nth-child(4) {
+        background-color: aqua;
+      } */
+      /* 짝수만 지정 even */
+      /* span:nth-child(even) {
+        background-color: blueviolet;
+      } */
+      /* 홀수만 지정 odd */
+      span:nth-child(odd) {
+        background-color: black;
+      }
+      /* 3의 배수로 선택 
+        첫번째부터 3의 배수 하고 싶으면 (3n + 1) 을 하면된다.*/
+      span:nth-child(3n) {
+        background-color: darkblue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div> -->
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+  </body>
+</html>
